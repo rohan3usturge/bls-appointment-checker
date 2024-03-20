@@ -3,8 +3,8 @@ const nodemailer = require('nodemailer');
 const transporter = nodemailer.createTransport({
     service: 'gmail', // Use your email provider
     auth: {
-        user: 'delphinedrive568@gmail.com',
-        pass: 'ixon pqbw zlwm wqtb'
+        user: 'blschecker@gmail.com',
+        pass: 'tumy eyzc akhc plvp'
     }
 });
 
@@ -96,7 +96,7 @@ const process = async (location, type) => {
 
 const main = async () => {
     try {
-        const currentLocations = [locationMap.Brampton, locationMap.Mississauga, locationMap.Winnipeg];
+        const currentLocations = [locationMap.Brampton, locationMap.Mississauga, locationMap.Toronto];
         const currentTypes = [types.Passport, types.OCI];
         for (let i = 0; i < currentLocations.length; i++) {
             const currentLocation = currentLocations[i];
