@@ -76,7 +76,7 @@ const getLocationString = (location) => {
 const email = async (location, type) => {
     let mailOptions = {
         from: 'rohan.cesc@gmail.com',
-        to: 'rohan.cesc@gmail.com',
+        to: 'rohan.cesc@gmail.com,kanchankulkarni28@gmail.com',
         subject: `Appointment Available for ${location} - ${type}`,
         text: 'https://www.blsindia-canada.com/appointmentbls/appointment.php'
     };
