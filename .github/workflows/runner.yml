@@ -1,9 +1,6 @@
 name: BLS Appointment Checker
 run-name: BLS Appointment Checker 🚀
-on:
-  schedule:
-    # * is a special character in YAML so you have to quote this string
-    - cron:  '*/6 * * * *'
+on: push
 jobs:
   BLSAppointmentChecker:
     runs-on: ubuntu-latest
@@ -21,6 +18,4 @@ jobs:
       - run: echo "🖥️ The workflow is now ready to test your code on the runner."
       - name: Install packages
         run: npm ci      
-      - name: Start Appointments Checker
-        run: npm run start --if-present
       - run: echo "🍏 This job's status is ${{ job.status }}."
