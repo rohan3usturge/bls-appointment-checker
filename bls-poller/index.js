@@ -76,7 +76,7 @@ const getLocationString = (location) => {
 const email = async (location, type) => {
     let mailOptions = {
         from: 'rohan.cesc@gmail.com',
-        to: 'rohan.cesc@gmail.com,kanchankulkarni28@gmail.com',
+        to: 'rohan.cesc@gmail.com,kanchankulkarni28@gmail.com,rishi.bhattacharya01@gmail.com',
         subject: `Appointment Available for ${location} - ${type}`,
         text: 'https://www.blsindia-canada.com/appointmentbls/appointment.php'
     };
@@ -94,7 +94,7 @@ const process = async (location, type) => {
 
 const main = async () => {
     try {
-        const currentLocations = [locationMap.Brampton, locationMap.Mississauga, locationMap.Winnipeg];
+        const currentLocations = [locationMap.Brampton, locationMap.Mississauga, locationMap.Toronto];
         const currentTypes = [types.Passport, types.OCI];
         for (let i = 0; i < currentLocations.length; i++) {
             const currentLocation = currentLocations[i];
